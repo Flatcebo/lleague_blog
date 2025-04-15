@@ -4,7 +4,15 @@
 
 ## 설치 및 실행 방법
 
-### 프로젝트 디렉터리에서
+### 프로젝트를 설치할 디렉토리에서
+
+#### Github Clone
+
+```tsx
+git clone https://github.com/Flatcebo/lleague_blog.git
+```
+
+### 프로젝트 디렉토리에서
 
 #### 패키지 설치
 
