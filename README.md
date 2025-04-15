@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 프로젝트 설명
 
-## Getting Started
+#### 많은 유저에게 검색 노출과 접근이 이루어져야 하는 블로그 입니다. SEO 및 실시간 데이터가 필요한 곳엔 SSR, 반대로 서버 부하를 줄이고 비용 감소가 필요한 곳엔 CSR로 페이지를 처리하였고, 개인 사정상 주어진 시간이 많지 않아서 더 깔끔하게 퀄리티 높은 블로그를 제작하고 싶었으니, 실행하지 못해 아쉬움이 많이 남는 프로젝트 입니다.
 
-First, run the development server:
+## 설치 및 실행 방법
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 프로젝트 디렉터리에서
+
+#### 패키지 설치
+
+```tsx
+npm i && bun i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 구동
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+npm run dev && bun run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 구현한 기능 목록
 
-## Learn More
+- 로그인, 로그아웃
+- 포스트 CRUD
+- 상세 포스트 조회
+- 포스트 제목 검색
+- 페이지네이션
+- 카테고리 필터링
+- 히스토리를 남기지 않고 페이지 접근 제한
+- SS
 
-To learn more about Next.js, take a look at the following resources:
+## 사용한 기술 스택 및 라이브러리
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NextJS 15
+- React 19
+- Tailwind CSS V4
+- react-query
+- zustand
+- date-fns
+- react-icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 개발하면서 고려한 부분이나 어려웠던 점
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### SEO와 실시간 데이터가 중요한 웹이다보니 렌더링 방식에 대해 가장 많이 고려했습니다.
